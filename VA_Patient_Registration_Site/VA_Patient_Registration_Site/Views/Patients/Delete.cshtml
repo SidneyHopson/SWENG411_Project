@@ -1,0 +1,51 @@
+﻿@model VA_Patient_Registration_Site.Models.Patient
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pat_fname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pat_fname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pat_lname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pat_lname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doc_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Doc_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Pat_id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
