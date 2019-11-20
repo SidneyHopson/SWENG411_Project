@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alpss\\Desktop\\Games\\Github\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj": {}
+    "C:\\Users\\ronak\\OneDrive\\Desktop\\penn state\\sem 5\\SWENG 411 L\\take 2\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alpss\\Desktop\\Games\\Github\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj": {
+    "C:\\Users\\ronak\\OneDrive\\Desktop\\penn state\\sem 5\\SWENG 411 L\\take 2\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alpss\\Desktop\\Games\\Github\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj",
+        "projectUniqueName": "C:\\Users\\ronak\\OneDrive\\Desktop\\penn state\\sem 5\\SWENG 411 L\\take 2\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj",
         "projectName": "VA_Patient_Registration_Site",
-        "projectPath": "C:\\Users\\alpss\\Desktop\\Games\\Github\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj",
-        "packagesPath": "C:\\Users\\alpss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alpss\\Desktop\\Games\\Github\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\obj\\",
+        "projectPath": "C:\\Users\\ronak\\OneDrive\\Desktop\\penn state\\sem 5\\SWENG 411 L\\take 2\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site.csproj",
+        "packagesPath": "C:\\Users\\ronak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronak\\OneDrive\\Desktop\\penn state\\sem 5\\SWENG 411 L\\take 2\\SWENG411_Project\\VA_Patient_Registration_Site\\VA_Patient_Registration_Site\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alpss\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ronak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -55,6 +50,7 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -65,10 +61,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
