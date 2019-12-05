@@ -94,3 +94,33 @@ C:\Users\ronak\OneDrive\Desktop\penn state\sem 5\SWENG 411 L\take 2\SWENG411_Pro
 C:\Users\ronak\OneDrive\Desktop\penn state\sem 5\SWENG 411 L\take 2\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\VA_Patient_Registration_Site.dll
 C:\Users\ronak\OneDrive\Desktop\penn state\sem 5\SWENG 411 L\take 2\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\VA_Patient_Registration_Site.pdb
 C:\Users\ronak\OneDrive\Desktop\penn state\sem 5\SWENG 411 L\take 2\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\VA_Patient_Registration_Site.csproj.CopyComplete
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\DoctorsPatients\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\DoctorsPatients\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\DoctorsPatients\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\DoctorsPatients\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\DoctorsPatients\Index.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Allergies\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Allergies\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Allergies\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Allergies\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Allergies\Index.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalConditions\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalConditions\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalConditions\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalConditions\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalConditions\Index.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Medications\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Medications\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Medications\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Medications\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\Medications\Index.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\ShotRecords\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\ShotRecords\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\ShotRecords\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\ShotRecords\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\ShotRecords\Index.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalRecords\Create.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalRecords\Delete.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalRecords\Details.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalRecords\Edit.g.cshtml.cs
+C:\Users\alpss\Desktop\Games\Github\SWENG411_Project\VA_Patient_Registration_Site\VA_Patient_Registration_Site\obj\Debug\netcoreapp2.1\Razor\Views\MedicalRecords\Index.g.cshtml.cs

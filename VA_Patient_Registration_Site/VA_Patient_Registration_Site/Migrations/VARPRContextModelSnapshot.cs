@@ -19,6 +19,23 @@ namespace VA_Patient_Registration_Site.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.Allergy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<int?>("MedicalRecordId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("Allergy");
+                });
+
             modelBuilder.Entity("VA_Patient_Registration_Site.Models.Doctor", b =>
                 {
                     b.Property<int>("Doc_id");
@@ -32,6 +49,70 @@ namespace VA_Patient_Registration_Site.Migrations
                     b.ToTable("Doctor");
                 });
 
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.DoctorsPatients", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Doc_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DoctorsPatients");
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.MedicalCondition", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DiagnosisDate");
+
+                    b.Property<int?>("MedicalRecordId");
+
+                    b.Property<string>("Notes");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("MedicalCondition");
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.MedicalRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MedicalRecord");
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.Medication", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Dosage");
+
+                    b.Property<int?>("MedicalRecordId");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("Medication");
+                });
+
             modelBuilder.Entity("VA_Patient_Registration_Site.Models.Patient", b =>
                 {
                     b.Property<int>("Pat_id");
@@ -40,13 +121,38 @@ namespace VA_Patient_Registration_Site.Migrations
 
                     b.Property<int>("Doc_id");
 
+                    b.Property<int?>("DoctorsPatientsId");
+
                     b.Property<string>("Pat_fname");
 
                     b.Property<string>("Pat_lname");
 
                     b.HasKey("Pat_id");
 
+                    b.HasIndex("DoctorsPatientsId");
+
                     b.ToTable("Patient");
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.ShotRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateOfShot");
+
+                    b.Property<string>("Drug");
+
+                    b.Property<int?>("MedicalRecordId");
+
+                    b.Property<string>("Notes");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("ShotRecord");
                 });
 
             modelBuilder.Entity("VA_Patient_Registration_Site.Models.User", b =>
@@ -66,6 +172,13 @@ namespace VA_Patient_Registration_Site.Migrations
                     b.ToTable("User");
                 });
 
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.Allergy", b =>
+                {
+                    b.HasOne("VA_Patient_Registration_Site.Models.MedicalRecord")
+                        .WithMany("Allergies")
+                        .HasForeignKey("MedicalRecordId");
+                });
+
             modelBuilder.Entity("VA_Patient_Registration_Site.Models.Doctor", b =>
                 {
                     b.HasOne("VA_Patient_Registration_Site.Models.User", "User")
@@ -74,12 +187,37 @@ namespace VA_Patient_Registration_Site.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.MedicalCondition", b =>
+                {
+                    b.HasOne("VA_Patient_Registration_Site.Models.MedicalRecord")
+                        .WithMany("MedicalConditions")
+                        .HasForeignKey("MedicalRecordId");
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.Medication", b =>
+                {
+                    b.HasOne("VA_Patient_Registration_Site.Models.MedicalRecord")
+                        .WithMany("Medications")
+                        .HasForeignKey("MedicalRecordId");
+                });
+
             modelBuilder.Entity("VA_Patient_Registration_Site.Models.Patient", b =>
                 {
+                    b.HasOne("VA_Patient_Registration_Site.Models.DoctorsPatients")
+                        .WithMany("Patients")
+                        .HasForeignKey("DoctorsPatientsId");
+
                     b.HasOne("VA_Patient_Registration_Site.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("Pat_id")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("VA_Patient_Registration_Site.Models.ShotRecord", b =>
+                {
+                    b.HasOne("VA_Patient_Registration_Site.Models.MedicalRecord")
+                        .WithMany("ShotRecords")
+                        .HasForeignKey("MedicalRecordId");
                 });
 #pragma warning restore 612, 618
         }
