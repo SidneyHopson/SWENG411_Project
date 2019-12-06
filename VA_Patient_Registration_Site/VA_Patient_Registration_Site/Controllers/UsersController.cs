@@ -18,11 +18,22 @@ namespace VA_Patient_Registration_Site.Controllers
             _context = context;
         }
 
-        // GET: Users
-        public async Task<IActionResult> Index()
+        // GET: Users/Login
+        public IActionResult Login()
         {
-            return View(await _context.User.ToListAsync());
+            return View();
         }
+        //POST: Users/Login
+        /*public async Task<IActionResult> Login([Bind("Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Login));
+            }
+            return View(user);
+        }*/
+
 
         // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -53,15 +64,14 @@ namespace VA_Patient_Registration_Site.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Email,Password,IsDoc")] User user)
+        public async Task<IActionResult> Create([Bind("IsDoc")] User user)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(user);
+            await _context.SaveChangesAsync();
+            if(user.IsDoc == true)
+            return RedirectToAction("Create", "Doctors");
+            else
+            return RedirectToAction("Create", "Patients");
+
         }
 
         // GET: Users/Edit/5
@@ -110,7 +120,7 @@ namespace VA_Patient_Registration_Site.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Login));
             }
             return View(user);
         }
@@ -141,12 +151,13 @@ namespace VA_Patient_Registration_Site.Controllers
             var user = await _context.User.FindAsync(id);
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Login));
         }
 
         private bool UserExists(int id)
         {
             return _context.User.Any(e => e.Id == id);
         }
+
     }
 }

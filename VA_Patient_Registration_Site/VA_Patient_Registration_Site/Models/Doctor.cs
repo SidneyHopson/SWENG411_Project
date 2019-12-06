@@ -17,5 +17,7 @@ namespace VA_Patient_Registration_Site.Models
         public string Doc_lname { get; set; }
         public User User { get; set; }
 
+        public int PassCode = 12345;
+
     }
 }

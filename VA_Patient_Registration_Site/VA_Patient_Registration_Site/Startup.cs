@@ -61,7 +61,7 @@ namespace VA_Patient_Registration_Site
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Users}/{action=Login}/{id?}");
             });
         }
     }
