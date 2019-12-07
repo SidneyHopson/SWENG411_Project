@@ -24,15 +24,27 @@ namespace VA_Patient_Registration_Site.Controllers
             return View();
         }
         //POST: Users/Login
-        /*public async Task<IActionResult> Login([Bind("Email,Password")] User user)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Email,Password")] User user)
         {
-            if (ModelState.IsValid)
+            await _context.SaveChangesAsync();
+            var U = from x in _context.User
+                    where user.Email == x.Email && user.Password == x.Password
+                    select new
+                    {
+                        User = x
+                    };
+
+            if(U != null)
             {
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Login));
+                return RedirectToAction("Details", new { id = user.Id });
             }
-            return View(user);
-        }*/
+            else
+            {
+                return NotFound();
+            }
+        }
 
 
         // GET: Users/Details/5

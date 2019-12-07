@@ -66,7 +66,7 @@ using VA_Patient_Registration_Site.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(143, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32d05e31939f433dbc9218ac7d993391", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6bfc85239a5488495c2f8bf5cf9283e", async() => {
                 BeginContext(166, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -96,7 +96,7 @@ using VA_Patient_Registration_Site.Models;
             WriteLiteral("        <tr>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(383, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "612027b8c15a4d1188a202af4c655a35", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0bb286142374474985f595df97e2a8d8", async() => {
                 BeginContext(428, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -131,7 +131,7 @@ using VA_Patient_Registration_Site.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(456, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44a9a254f5644b78859df5e72795dcb2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29966e262eef46d8a3a3874dc4844988", async() => {
                 BeginContext(504, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -166,7 +166,7 @@ using VA_Patient_Registration_Site.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(535, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8da70e6731a49aba3c93b4c5bb01f1a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e014727c594f4d7980ca02337f137dd9", async() => {
                 BeginContext(582, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

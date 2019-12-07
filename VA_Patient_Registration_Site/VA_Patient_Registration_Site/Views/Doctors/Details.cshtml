@@ -11,26 +11,23 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Doc_fname)
+            First Name
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Doc_fname)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Doc_lname)
+            Last Name
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Doc_lname)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.User)
+            Email Address
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.User.Id)
+            @Html.DisplayFor(model => model.User.Email)
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Doc_id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

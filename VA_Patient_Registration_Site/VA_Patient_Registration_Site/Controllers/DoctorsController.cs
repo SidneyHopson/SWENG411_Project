@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -56,15 +57,18 @@ namespace VA_Patient_Registration_Site.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Doc_id,Doc_fname,Doc_lname,PassCode")] Doctor doctor)
+        public async Task<IActionResult> Create([Bind("Email, Password")] User user, [Bind("Doc_fname,Doc_lname, PassCode")] Doctor doctor)
         {
             if (doctor.PassCode == 12345)
             {
                 if (ModelState.IsValid)
                 {
+                    user.IsDoc = true;
+                    _context.User.Add(user);
+                    doctor.Doc_id = user.Id;
                     _context.Add(doctor);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction("Login", "Users");
                 }
                 ViewData["Doc_id"] = new SelectList(_context.User, "Id", "Id", doctor.Doc_id);
                 return View(doctor);

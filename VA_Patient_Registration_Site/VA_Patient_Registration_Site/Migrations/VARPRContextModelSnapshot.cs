@@ -44,6 +44,8 @@ namespace VA_Patient_Registration_Site.Migrations
 
                     b.Property<string>("Doc_lname");
 
+                    b.Property<int>("PassCode");
+
                     b.HasKey("Doc_id");
 
                     b.ToTable("Doctor");

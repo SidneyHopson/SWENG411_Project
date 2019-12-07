@@ -56,13 +56,16 @@ namespace VA_Patient_Registration_Site.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Pat_id,Pat_fname,Pat_lname,DOB,Doc_id")] Patient patient)
+        public async Task<IActionResult> Create([Bind("Email, Password")] User user, [Bind("Pat_fname,Pat_lname,DOB")] Patient patient)
         {
             if (ModelState.IsValid)
             {
+                user.IsDoc = false;
+                _context.User.Add(user);
+                patient.Pat_id = user.Id;
                 _context.Add(patient);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details", new { id = patient.Pat_id });
             }
             ViewData["Pat_id"] = new SelectList(_context.User, "Id", "Id", patient.Pat_id);
             return View(patient);
