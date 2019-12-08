@@ -42,7 +42,7 @@ namespace VA_Patient_Registration_Site.Controllers
             }
             else
             {
-                return NotFound();
+                return RedirectToAction(nameof(Login));
             }
         }
 

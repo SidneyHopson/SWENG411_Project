@@ -118,7 +118,7 @@ namespace VA_Patient_Registration_Site.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details", new { id = patient.Pat_id});
             }
             ViewData["Pat_id"] = new SelectList(_context.User, "Id", "Id", patient.Pat_id);
             return View(patient);

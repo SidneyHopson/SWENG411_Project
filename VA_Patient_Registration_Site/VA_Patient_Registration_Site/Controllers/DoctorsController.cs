@@ -68,7 +68,7 @@ namespace VA_Patient_Registration_Site.Controllers
                     doctor.Doc_id = user.Id;
                     _context.Add(doctor);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("Login", "Users");
+                    return RedirectToAction("Details", new { id= doctor.Doc_id});
                 }
                 ViewData["Doc_id"] = new SelectList(_context.User, "Id", "Id", doctor.Doc_id);
                 return View(doctor);
