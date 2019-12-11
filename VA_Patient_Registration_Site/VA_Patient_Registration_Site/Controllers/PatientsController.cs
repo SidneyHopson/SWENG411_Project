@@ -19,7 +19,7 @@ namespace VA_Patient_Registration_Site.Controllers
         }
 
         // GET: Patients
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Find(string SearchString)
         {
             var vARPRContext = _context.Patient.Include(p => p.User);
             return View(await vARPRContext.ToListAsync());
@@ -151,7 +151,7 @@ namespace VA_Patient_Registration_Site.Controllers
             var patient = await _context.Patient.FindAsync(id);
             _context.Patient.Remove(patient);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Create));
         }
 
         private bool PatientExists(int id)

@@ -4,20 +4,6 @@
     ViewData["Title"] = "Details";
 }
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
-<script type="text/javascript">
-$(function () {
-$("#Find Patients").click(function(){
-window.location.href = "@Url.Action("Find", "Patients")";
-});
-});
-</script>
-
 <h2>Details</h2>
 
 <div>
@@ -45,7 +31,7 @@ window.location.href = "@Url.Action("Find", "Patients")";
     </dl>
 </div>
 <div class="form-group">
-    <input type="submit" value="Find Patients" class="btn btn-default" />
+    <a asp-action="Find" asp-controller="Patients">Find Patients</a>
 </div>
 
 
